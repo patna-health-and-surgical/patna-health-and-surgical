@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    font-family: "Balsamiq Sans", sans-serif;
+}
+body{
+    @apply dark:bg-gray-800;
+
+}
+nav .navText {
+    color: aliceblue;
+    background-image: linear-gradient(to right, black 0%, rgb(106, 71, 6) 50%, rgb(94, 94, 14) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: sans-serif;
+    font-weight: 700;
+    padding: 0 2vw;
+}
+
+.homePage {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: white;
+}
+
+.homePage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(80%);
+    display: block;
+    z-index: -2;
+}
+
+.homePage h1,
+.homePage h3 {
+    position: absolute;
+
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    z-index: 1;
+}
+
+.homePage h1 {
+    top: 10%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: #005AA7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e0d873, #3fa1f7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #e0d873, #3fa1f7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.homePage h3 {
+    margin-top: 0.5em;
+    top: 19%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 600px) {
+    
+
+    .homePage h3 {
+        top: 20%;
+    }
+}
+
+/* ..........Services......... */
+
+
+.glow-text {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.5);
+  }
