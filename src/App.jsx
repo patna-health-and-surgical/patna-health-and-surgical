@@ -20,6 +20,7 @@ function App() {
             src="./image/logo2.png"
             style={{ boxShadow: "0 4px 6px rgba(0, 0, 0, 0.5)" }}
             alt=""
+            loading="lazy"
           />
           <div className="navText text-xl md:text-4xl">
             <span className="uppercase">
@@ -54,7 +55,7 @@ function App() {
       </nav>
 
       <div className="homePage">
-        <img src="./image/bg1.jpg" alt="" />
+        <img src="./image/bg1.jpg" alt="" loading="lazy" />
         <h1 className="leading-none w-[95vw] text-xl md:text-4xl font-extrabold">
           Patna Health And Surgical PVT. LTD.
         </h1>
